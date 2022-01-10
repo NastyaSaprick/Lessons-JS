@@ -1,0 +1,27 @@
+let title = 'А чё? А ни чё!';
+let screens = 'Простые, Сложные, Интерактивные';
+let screenPrice = '1324';
+let rollback = '50';
+let fullPrice = '500000';
+let adaptive = true;
+
+console.log('1]');
+console.log(title);
+console.log(typeof(title));
+console.log(fullPrice);
+console.log(typeof(fullPrice));
+console.log(adaptive);
+console.log(typeof(adaptive));
+console.log(' ');
+console.log('2] ');
+console.log(screens.length);
+console.log(' ');
+console.log('3] ');
+console.log('Стоимость верстки экранов ' + screenPrice + ' гривен' + ' и ' + 'Стоимость разработки сайта ' + fullPrice + ' гривен');
+console.log(' ');
+console.log('4] ');
+console.log(screens.toLowerCase());
+console.log(screens.split());
+console.log(' ');
+console.log('5] ');
+console.log((fullPrice * (rollback/100)));
