@@ -21,24 +21,41 @@
 
 
 //3.
+// class First {
+// constructor(hello){
+//     this.hello = hello;
+//   }
+//   sayHello = function () {
+//     console.log(`Здарова ${this.hello}`);
+//   }
+// }
+
+// //наследование
+// class Second extends First{
+//   constructor(hello, hello1 = ['А я наследуемый метод!']) {
+//     super(hello)
+//     this.hello1 = hello1
+//   }
+// }
+
+// const second = new Second('Привет я метод родителя!')
+// console.log(second);
+// second.sayHello();
+
+
 class First {
-constructor(hello){
-    this.hello = hello;
-  }
-  sayHello = function () {
-    console.log(`Здарова ${this.hello}`);
+  hello() {
+    console.log("Привет я метод родителя!");
   }
 }
 
-//наследование
-class Second extends First{
-  constructor(hello, hello1 = ['А я наследуемый метод!']) {
-    super(hello)
-    this.hello1 = hello1
+class Second extends First {
+  hello() {
+    super.hello();
+    console.log("А я наследуемый метод!");
   }
 }
 
-const second = new Second('Привет я метод родителя!')
-console.log(second);
-second.sayHello();
-//А я наследуемый метод!
+const test = new Second();
+
+test.hello();
